@@ -11,9 +11,11 @@ public class PlayerController : MonoBehaviour
     float radioDelCheckSuelo = 0.2f;
     bool puedeMoverse, puedeSaltar, tocandoSuelo;
     public float velocidadDeMovimiento, fuerzaDeSalto;
-    int direccionDeMovimiento;
+    public int direccionDeMovimiento;
     Rigidbody2D rb;
     float cooldDownDeBoost;
+
+    public GameObject piedra;
     void Start()
     {
         boost = 1;
@@ -26,6 +28,7 @@ public class PlayerController : MonoBehaviour
     {
         Moverse();
         Saltar();
+        TirarPiedra();
 
         if(cooldDownDeBoost > 0)
         {
@@ -83,6 +86,14 @@ public class PlayerController : MonoBehaviour
             cooldDownDeBoost = tiempo;
         }
 
+    }
+    
+    public void TirarPiedra()
+    {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            GameObject.Instantiate(piedra, transform.position,Quaternion.identity);
+        }
     }
 
 }
