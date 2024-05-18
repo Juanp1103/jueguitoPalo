@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2107668183236544418}
   - component: {fileID: 1281155922765282957}
   - component: {fileID: 8069287916757712335}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hamburguersa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2

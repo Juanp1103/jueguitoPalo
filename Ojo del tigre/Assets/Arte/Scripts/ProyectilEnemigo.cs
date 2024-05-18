@@ -2,25 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Proyectil : MonoBehaviour
+public class ProyectilEnemigo : MonoBehaviour
 {
     public int fuerza;
     Rigidbody2D rb;
     public int daño;
     void Start()
     {
+        GameObject camilo = GameObject.Find("Camilo");
+        Vector2 direccion = new Vector2(camilo.transform.position.x - transform.position.x, camilo.transform.position.y  -transform.position.y);
         rb = GetComponent<Rigidbody2D>();
-        rb.AddForce(new Vector2(
-            GameObject.Find("Camilo").GetComponent<PlayerController>().direccionDeMovimiento 
-            * fuerza,150)); //Revisa para donde mira camilo
+        Debug.Log(direccion);
+        direccion.y *= 3.5f;
+        rb.AddForce(direccion*fuerza); //Revisa para donde mira camilo
         Destroy(gameObject, 5f); //Se destruye en 5 segundos
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemigo"))
+        if (collision.CompareTag("Jugador"))
         {
-            Debug.Log("Daño a enemigo");
+            Debug.Log("Daño a Jugador");
             collision.GetComponent<Salud>().CambiarSalud(daño);
             Destroy(gameObject);
         }
