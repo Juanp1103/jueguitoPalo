@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Camilo Lanzar-caminar_0
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 12
+        width: 152
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07df76334b08cf5468b8b5c0a4d48531
+      internalID: 1824008768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camilo Lanzar-caminar_1
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 12
+        width: 116
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8849376dd19dc4c4e813edf508dba882
+      internalID: -1032275341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camilo Lanzar-caminar_2
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 12
+        width: 120
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8808010504307a646b815a5d88461c1a
+      internalID: 1823416750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camilo Lanzar-caminar_3
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 12
+        width: 132
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c2e00ff6dc03645b0f78157daeda27
+      internalID: -1981833853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +216,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Camilo Lanzar-caminar_0: 1824008768
+      Camilo Lanzar-caminar_1: -1032275341
+      Camilo Lanzar-caminar_2: 1823416750
+      Camilo Lanzar-caminar_3: -1981833853
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

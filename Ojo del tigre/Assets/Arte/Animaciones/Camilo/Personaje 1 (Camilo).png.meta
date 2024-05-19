@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Personaje 1 (Camilo)_0
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 12
+        width: 116
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4673de68a01b8041846b1991a5e0fe0
+      internalID: 81077670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje 1 (Camilo)_1
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 12
+        width: 116
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35fcbd9fcda78c2499c43cfa474f0025
+      internalID: -1660587894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje 1 (Camilo)_2
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 12
+        width: 117
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 778815cd26515344bb8d7efefa192335
+      internalID: -1010246983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje 1 (Camilo)_3
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 12
+        width: 116
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb19177ebb473d3489db71e433cb668f
+      internalID: 364115919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +216,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Personaje 1 (Camilo)_0: 81077670
+      Personaje 1 (Camilo)_1: -1660587894
+      Personaje 1 (Camilo)_2: -1010246983
+      Personaje 1 (Camilo)_3: 364115919
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

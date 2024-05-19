@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Camilo Lanzar_0
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 12
+        width: 125
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f0ea6fd8bbd524e91501fd2c7bb782
+      internalID: -539790863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camilo Lanzar_1
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 12
+        width: 116
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 132c88bacbbd5f040ab8e5fd9c4c2542
+      internalID: 538784448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camilo Lanzar_2
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 12
+        width: 120
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8508599f42edf3d45bf9c9a551b09aa7
+      internalID: -1140918576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Camilo Lanzar_3
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 12
+        width: 132
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c73d9919ae37f4697494c8aafa3dfc
+      internalID: 935488992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +216,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Camilo Lanzar_0: -539790863
+      Camilo Lanzar_1: 538784448
+      Camilo Lanzar_2: -1140918576
+      Camilo Lanzar_3: 935488992
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
