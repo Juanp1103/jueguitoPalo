@@ -12,9 +12,15 @@ public class Enemigo : MonoBehaviour
     bool puedeDisp;
     public float velocidadDeMovimiento;
     int direccion;
+    Animator animator;
+    SpriteRenderer sr;
+    GameObject camilo;
 
     private void Start()
     {
+        camilo = GameObject.Find("Camilo");
+        sr = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
         jugador = GameObject.Find("Camilo");
         puedeDisp = true;
     }
@@ -23,7 +29,6 @@ public class Enemigo : MonoBehaviour
     {
        if(DistanciaAlJugador() > distanciaParaDisparar)
         {
-            print(timerMov);
             //Mover
             if(timerMov > 0)
             {
@@ -31,13 +36,19 @@ public class Enemigo : MonoBehaviour
                 if (direccion == 1)
                 {
                     Mover(1); //Mover derecha
+                    animator.SetBool("Caminando", true);
+                    sr.flipX = false;
+                    
                 }
                 else if (direccion == 2)
                 {
+                    animator.SetBool("Caminando", true);
+                    sr.flipX = true;
                     Mover(-1); //Mover izquierda
                 }
                 else
                 {
+                    animator.SetBool("Caminando", false);
                     Mover(0); //Quieto
                 }
             }
@@ -51,9 +62,20 @@ public class Enemigo : MonoBehaviour
         }
         else
         {
-            //Disparar
-            if(puedeDisp)
+            if(camilo.transform.position.x > transform.position.x)
             {
+                sr.flipX = false;
+            }
+            else
+            {
+                sr.flipX = true;
+            }
+
+            animator.SetBool("Caminando", false);
+            //Disparar
+            if (puedeDisp)
+            {
+                animator.SetBool("Lanzando", true);
                 int objeto = Random.Range(0, proyectil.Length);
                 Instantiate(proyectil[objeto], transform.position, Quaternion.identity);
                 timerCooldown = cooldownDisparo;
@@ -61,6 +83,7 @@ public class Enemigo : MonoBehaviour
             }
             else
             {
+                animator.SetBool("Lanzando", false);
                 timerCooldown -= Time.deltaTime;
                 if(timerCooldown < 0)
                 {

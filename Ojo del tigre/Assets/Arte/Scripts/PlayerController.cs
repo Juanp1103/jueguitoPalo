@@ -131,6 +131,7 @@ public class PlayerController : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
+            
             animator.SetBool("Lanzando",true);
             GameObject.Instantiate(piedra, transform.position,Quaternion.identity);
         }

@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Lanzar-caminar enemigo_0
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 8
+        width: 100
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9feadc04098d4db42ae6aec13dcb4e09
+      internalID: 1547052964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lanzar-caminar enemigo_1
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 8
+        width: 112
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41f51381f313c264e81ea9b5433b8243
+      internalID: 767332233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lanzar-caminar enemigo_2
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 8
+        width: 120
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28283395167c9df4d83e95d3ef92c560
+      internalID: -305319948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lanzar-caminar enemigo_3
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 8
+        width: 144
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ed3824d04f70d74e9e847a6ecb75e10
+      internalID: 455399821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +216,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Lanzar-caminar enemigo_0: 1547052964
+      Lanzar-caminar enemigo_1: 767332233
+      Lanzar-caminar enemigo_2: -305319948
+      Lanzar-caminar enemigo_3: 455399821
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
