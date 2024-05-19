@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 3323160452226872764}
   - component: {fileID: 1287357487482402293}
   - component: {fileID: 3707768749153292751}
+  - component: {fileID: 3843015844882240751}
   m_Layer: 6
   m_Name: Camilo
   m_TagString: Jugador
@@ -212,3 +213,17 @@ MonoBehaviour:
   fuerzaDeSalto: 17
   direccionDeMovimiento: 0
   piedra: {fileID: 1798319179366069615, guid: ac59907df08a7194da02750253c90e62, type: 3}
+--- !u!114 &3843015844882240751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7485437782678124618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1746c404556bb4f4db5ce67f8eab238b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saludInicial: 10
+  salud: 0

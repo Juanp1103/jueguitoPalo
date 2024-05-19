@@ -12,8 +12,7 @@ public class ProyectilEnemigo : MonoBehaviour
         GameObject camilo = GameObject.Find("Camilo");
         Vector2 direccion = new Vector2(camilo.transform.position.x - transform.position.x, camilo.transform.position.y  -transform.position.y);
         rb = GetComponent<Rigidbody2D>();
-        Debug.Log(direccion);
-        direccion.y *= 3.5f;
+        direccion.y += 2f;
         rb.AddForce(direccion*fuerza); //Revisa para donde mira camilo
         Destroy(gameObject, 5f); //Se destruye en 5 segundos
     }
@@ -22,7 +21,7 @@ public class ProyectilEnemigo : MonoBehaviour
     {
         if (collision.CompareTag("Jugador"))
         {
-            Debug.Log("Daño a Jugador");
+            Debug.Log(collision);
             collision.GetComponent<Salud>().CambiarSalud(daño);
             Destroy(gameObject);
         }

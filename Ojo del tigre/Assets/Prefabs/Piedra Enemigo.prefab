@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 720065105972619963}
   - component: {fileID: 3002094998329738261}
   - component: {fileID: 4401783480859132138}
-  - component: {fileID: 8587772576011246644}
   - component: {fileID: 7156992921967378036}
+  - component: {fileID: 3322754780068139087}
   m_Layer: 7
-  m_Name: piedra
+  m_Name: Piedra Enemigo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100,7 +100,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -130,7 +130,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 768
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -160,20 +160,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2775946, y: 1.38}
   m_EdgeRadius: 0
---- !u!114 &8587772576011246644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1798319179366069615}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4feff806c7eba7541a31ca9612dd2cbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuerza: 1200
-  "da\xF1o": 1
 --- !u!61 &7156992921967378036
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -189,7 +175,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 512
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -219,3 +205,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.805012, y: 0.8744668}
   m_EdgeRadius: 0
+--- !u!114 &3322754780068139087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798319179366069615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7b0da4cd57041647995454a3653211f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuerza: 30
+  "da\xF1o": 1

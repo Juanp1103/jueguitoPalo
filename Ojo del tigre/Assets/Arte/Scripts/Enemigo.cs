@@ -10,6 +10,8 @@ public class Enemigo : MonoBehaviour
     public float cooldownDisparo;
     float timerCooldown, timerMov;
     bool puedeDisp;
+    public float velocidadDeMovimiento;
+    int direccion;
 
     private void Start()
     {
@@ -21,8 +23,31 @@ public class Enemigo : MonoBehaviour
     {
        if(DistanciaAlJugador() > distanciaParaDisparar)
         {
-            print(DistanciaAlJugador());
+            print(timerMov);
             //Mover
+            if(timerMov > 0)
+            {
+                timerMov-=Time.deltaTime;
+                if (direccion == 1)
+                {
+                    Mover(1); //Mover derecha
+                }
+                else if (direccion == 2)
+                {
+                    Mover(-1); //Mover izquierda
+                }
+                else
+                {
+                    Mover(0); //Quieto
+                }
+            }
+            else
+            {
+                direccion = Random.Range(0, 3);
+                timerMov = Random.Range(2, 6);
+                
+            }
+            
         }
         else
         {
@@ -54,5 +79,11 @@ public class Enemigo : MonoBehaviour
                              + Mathf.Pow(transform.position.y - jugador.transform.position.y, 2));
 
         return distancia;
+    }
+
+    public void Mover(int direccion)
+    {
+        transform.position = new Vector2(transform.position.x + direccion * Time.deltaTime * velocidadDeMovimiento,
+                                         transform.position.y);
     }
 }

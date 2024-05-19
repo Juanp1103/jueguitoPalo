@@ -146,6 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saludInicial: 3
+  salud: 0
 --- !u!114 &2608858840343181284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,11 +159,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 331c9900b66cac24dba08536836b0307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanciaParaDisparar: 150
+  distanciaParaDisparar: 10
   proyectil:
-  - {fileID: 0}
-  - {fileID: 0}
-  cooldownDisparo: 1
+  - {fileID: 1798319179366069615, guid: 81b277d7a0a19c94cb83ebdb8b4aeb11, type: 3}
+  - {fileID: 1798319179366069615, guid: d7cc5fa095fb592449b69a51434a54b9, type: 3}
+  cooldownDisparo: 2
+  velocidadDeMovimiento: 1.2
 --- !u!50 &4762955805323737946
 Rigidbody2D:
   serializedVersion: 4
