@@ -176,7 +176,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 7
+  m_Mass: 2
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -209,6 +209,6 @@ MonoBehaviour:
     m_Bits: 8
   checkSuelo: {fileID: 8834010178983255553}
   velocidadDeMovimiento: 7
-  fuerzaDeSalto: 15
+  fuerzaDeSalto: 17
   direccionDeMovimiento: 0
   piedra: {fileID: 1798319179366069615, guid: ac59907df08a7194da02750253c90e62, type: 3}
