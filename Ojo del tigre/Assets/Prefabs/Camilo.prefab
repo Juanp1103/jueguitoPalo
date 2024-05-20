@@ -44,8 +44,8 @@ GameObject:
   - component: {fileID: 3323160452226872764}
   - component: {fileID: 1287357487482402293}
   - component: {fileID: 3707768749153292751}
-  - component: {fileID: 3843015844882240751}
-  - component: {fileID: 3145327011812872363}
+  - component: {fileID: 5258360388313333518}
+  - component: {fileID: 5789323407215355691}
   m_Layer: 6
   m_Name: Camilo
   m_TagString: Jugador
@@ -62,7 +62,7 @@ Transform:
   m_GameObject: {fileID: 7485437782678124618}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.323371, y: -2.62, z: 0}
+  m_LocalPosition: {x: -8.74, y: -2.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -109,7 +109,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 186421956, guid: 5dd5203285aa013488ac20802801c52f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -153,7 +153,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.04288864, y: -0.05575502}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -164,7 +164,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.32, y: 2.4}
+  m_Size: {x: 0.9425812, y: 2.28849}
   m_EdgeRadius: 0
 --- !u!50 &1287357487482402293
 Rigidbody2D:
@@ -214,7 +214,7 @@ MonoBehaviour:
   fuerzaDeSalto: 17
   direccionDeMovimiento: 0
   piedra: {fileID: 1798319179366069615, guid: ac59907df08a7194da02750253c90e62, type: 3}
---- !u!114 &3843015844882240751
+--- !u!114 &5258360388313333518
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -228,7 +228,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   saludInicial: 10
   salud: 0
---- !u!95 &3145327011812872363
+  jugador: 1
+--- !u!95 &5789323407215355691
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0

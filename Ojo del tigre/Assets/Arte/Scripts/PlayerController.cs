@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     Animator animator;
     SpriteRenderer sr;
 
+
     public GameObject piedra;
     void Start()
     {

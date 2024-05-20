@@ -5,6 +5,8 @@ using UnityEngine;
 public class Camara : MonoBehaviour
 {
     public GameObject target;
+    public int kill;
+    public GameObject[] barreras;
 
     private float targetPoseX;
     private float targetPoseY;
@@ -56,5 +58,10 @@ public class Camara : MonoBehaviour
     void Update()
     {
         MoveCam();
+        if (kill >= 2)
+        {
+            izquierdaMax = 30;
+            barreras[0].SetActive(false);
+        }
     }
 }

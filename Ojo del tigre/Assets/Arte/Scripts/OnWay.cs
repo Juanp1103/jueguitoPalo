@@ -17,6 +17,11 @@ public class OnWay : MonoBehaviour
         {
             collider.SetActive(true);
         }
+
+        if (other.CompareTag("Enemigo"))
+        {
+            collider.SetActive(true);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
