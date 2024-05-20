@@ -60,8 +60,13 @@ public class Camara : MonoBehaviour
         MoveCam();
         if (kill >= 2)
         {
-            izquierdaMax = 30;
+            izquierdaMax = 32.09f;
             barreras[0].SetActive(false);
+        }
+        if (kill >= 6)
+        {
+            izquierdaMax = 62.76f;
+            barreras[1].SetActive(false);
         }
     }
 }

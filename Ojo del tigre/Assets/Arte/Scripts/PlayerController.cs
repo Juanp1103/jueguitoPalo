@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     float cooldDownDeBoost;
     Animator animator;
     SpriteRenderer sr;
+    Salud salud;
 
 
     public GameObject piedra;
