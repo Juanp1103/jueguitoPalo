@@ -39,4 +39,9 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Perdida");
     }
+
+    public void Win()
+    {
+        SceneManager.LoadScene("Win");
+    }
 }

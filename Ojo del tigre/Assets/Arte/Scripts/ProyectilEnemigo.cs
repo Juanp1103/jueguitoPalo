@@ -14,7 +14,7 @@ public class ProyectilEnemigo : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         direccion.y += 2f;
         rb.AddForce(direccion*fuerza); //Revisa para donde mira camilo
-        Destroy(gameObject, 5f); //Se destruye en 5 segundos
+        Destroy(gameObject, 2f); //Se destruye en 2 segundos
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

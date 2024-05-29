@@ -16,10 +16,11 @@ public class PlayerController : MonoBehaviour
     float cooldDownDeBoost;
     Animator animator;
     SpriteRenderer sr;
-    Salud salud;
+    Almacenamiento almacenamiento;
+    public bool puedeDisp;
 
 
-    public GameObject piedra;
+    public GameObject [] proyectil;
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
@@ -27,6 +28,7 @@ public class PlayerController : MonoBehaviour
         boost = 1;
         puedeMoverse = true; puedeSaltar = true;
         rb = GetComponent<Rigidbody2D>();
+        almacenamiento = GetComponent<Almacenamiento>();
     }
 
     // Update is called once per frame
@@ -34,7 +36,6 @@ public class PlayerController : MonoBehaviour
     {
         Moverse();
         Saltar();
-        TirarPiedra();
 
         if(direccionDeMovimiento == -1)
         {
@@ -129,13 +130,21 @@ public class PlayerController : MonoBehaviour
 
     }
     
-    public void TirarPiedra()
+    public void TirarPiedra(bool puededisp)
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if (puededisp == true)
         {
-            
-            animator.SetBool("Lanzando",true);
-            GameObject.Instantiate(piedra, transform.position,Quaternion.identity);
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                animator.SetBool("Lanzando", true);
+                int objeto = Random.Range(0, proyectil.Length);
+                Instantiate(proyectil[objeto], transform.position, Quaternion.identity);
+                almacenamiento.proyectiles--;
+            }
+            else
+            {
+                animator.SetBool("Lanzando", false);
+            }
         }
         else
         {

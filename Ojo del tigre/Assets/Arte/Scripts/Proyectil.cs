@@ -13,7 +13,7 @@ public class Proyectil : MonoBehaviour
         rb.AddForce(new Vector2(
             GameObject.Find("Camilo").GetComponent<PlayerController>().direccionDeMovimiento 
             * fuerza,150)); //Revisa para donde mira camilo
-        Destroy(gameObject, 5f); //Se destruye en 5 segundos
+        Destroy(gameObject, 2f); //Se destruye en 2 segundos
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

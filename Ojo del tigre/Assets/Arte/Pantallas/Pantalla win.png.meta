@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7beb56af4cd4b8b49918c0d7ca5138f1
+guid: 450e9dd6a3de26641a34d3e1570b8e45
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,91 +121,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Golpe boss_0
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 0
-        width: 96
-        height: 252
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b57c908363f252408aeb4a57036cbe4
-      internalID: -2106628497
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Golpe boss_1
-      rect:
-        serializedVersion: 2
-        x: 328
-        y: 0
-        width: 96
-        height: 252
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: db67c5f30286013478ca17dee0bb1910
-      internalID: -97069452
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Golpe boss_2
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 0
-        width: 104
-        height: 252
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a0879810e4baeab4b8e0202f2719310a
-      internalID: 1723087385
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Golpe boss_3
-      rect:
-        serializedVersion: 2
-        x: 840
-        y: 0
-        width: 116
-        height: 252
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 96097efde09c72441bbb335ad4f494b7
-      internalID: -604482789
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -216,11 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Golpe boss_0: -2106628497
-      Golpe boss_1: -97069452
-      Golpe boss_2: 1723087385
-      Golpe boss_3: -604482789
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

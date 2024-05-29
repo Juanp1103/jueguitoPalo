@@ -9,7 +9,9 @@ public class Salud : MonoBehaviour
     public int salud;
     SpriteRenderer sr;
     Camara camera;
+    Boss bossK;
     public bool jugador;
+    public bool boss;
     private MainMenu Menu;
     private void Start()
     {
@@ -17,6 +19,7 @@ public class Salud : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         camera = GameObject.Find("Main Camera").GetComponent<Camara>();
         Menu = GameObject.Find("SceneManager").GetComponent<MainMenu>();
+        bossK = GameObject.Find("boss").GetComponent <Boss>();
     }
 
     public void CambiarSalud(int valor)
@@ -55,9 +58,14 @@ public class Salud : MonoBehaviour
         {
             Destroy(gameObject);
             camera.kill++;
+            bossK.kill++;
             if (jugador == true)
             {
                 Menu.Perdida();
+            }
+            if (boss == true)
+            {
+                Menu.Win();
             }
         }
     }
