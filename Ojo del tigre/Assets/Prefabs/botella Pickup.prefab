@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 888441317623248677}
   - component: {fileID: 5452167829455303074}
   - component: {fileID: 2666299746996325732}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: botella Pickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}

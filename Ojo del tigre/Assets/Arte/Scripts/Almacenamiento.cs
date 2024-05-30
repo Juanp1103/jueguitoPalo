@@ -8,6 +8,7 @@ public class Almacenamiento : MonoBehaviour
     public int proyectilInicial;
     PlayerController Camilo;
     bool puedeDisp;
+    public SpriteRenderer[] Botellas;
 
     // Start is called before the first frame update
     void Start()
@@ -15,6 +16,8 @@ public class Almacenamiento : MonoBehaviour
         puedeDisp = true;
         proyectiles = proyectilInicial;
         Camilo = GetComponent<PlayerController>();
+        Botellas = GetComponent<SpriteRenderer[]>();
+        cambiarContador();
     }
 
     public void CambiarProyectiles(int valor)
@@ -30,16 +33,28 @@ public class Almacenamiento : MonoBehaviour
 
 
     }
+    public void cambiarContador()
+    {
+        for (int i = 0; i <= 15; i++)
+        {
+            Botellas[i].color = Color.clear;
+        }
+        Botellas[proyectiles].color = Color.white;
+        
+    }
+
     // Update is called once per frame
     void Update()
     {
+        cambiarContador();
         if (proyectiles > 0)
         {
+
             Camilo.TirarPiedra(true);
         }
         else
         {
             Camilo.TirarPiedra(false);
-        }
+        } 
     }
 }

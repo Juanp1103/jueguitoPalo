@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3088566075200057291}
   - component: {fileID: 2058357967087585773}
   - component: {fileID: 1484604164427471792}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Piedra Pickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}

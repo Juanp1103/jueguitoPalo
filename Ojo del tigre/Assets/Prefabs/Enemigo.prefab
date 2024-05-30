@@ -121,7 +121,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00000023841858, y: 0.03296578}
+  m_Offset: {x: -0.033936083, y: 0.03296578}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -132,7 +132,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8777604, y: 2.3380067}
+  m_Size: {x: 1.2397419, y: 2.3380067}
   m_EdgeRadius: 0
 --- !u!114 &4150547151536849364
 MonoBehaviour:
@@ -148,6 +148,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   saludInicial: 3
   salud: 0
+  jugador: 0
+  boss: 0
+  Corazones: []
 --- !u!114 &2608858840343181284
 MonoBehaviour:
   m_ObjectHideFlags: 0

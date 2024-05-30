@@ -50,55 +50,14 @@ public class Salud : MonoBehaviour
 
     public void CambiarCorazon()
     {
-        if (salud == 1)
+        for (int i = 0; i <= 9; i++)
         {
-            Corazones[0].color = Color.white;
-        }
-        if (salud == 2)
-        {
-            Corazones[1].color = Color.white;
-        }
-        if (salud == 3)
-        {
-            Corazones[2].color = Color.white;
-        }
-        if (salud == 4)
-        {
-            Corazones[3].color = Color.white;
-        }
-        if (salud == 5)
-        {
-            Corazones[4].color = Color.white;
-        }
-        if (salud == 6)
-        {
-            Corazones[5].color = Color.white;
-        }
-        if (salud == 7)
-        {
-            Corazones[6].color = Color.white;
-        }
-        if (salud == 8)
-        {
-            Corazones[7].color = Color.white;
-        }
-        if (salud == 9)
-        {
-            Corazones[8].color = Color.white;
-        }
-        if (salud == 10)
-        {
-            Corazones[9].color = Color.white;
-        }
-        else
-        {
-            for (int i = salud; i <= 9 ; i++)
-            {
-
             Corazones[i].color = Color.clear;
-            }
         }
-
+        for (int i = 0; i <= salud-1; i++)
+        {
+            Corazones[i].color = Color.white;
+        }
     }
 
     public void VolverAColorNormal()
@@ -108,7 +67,7 @@ public class Salud : MonoBehaviour
 
     private void Update()
     {
-        if (jugador == true)
+        if(jugador == true)
         {
             CambiarCorazon();
         }
